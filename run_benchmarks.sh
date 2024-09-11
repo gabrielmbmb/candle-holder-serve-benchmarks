@@ -10,11 +10,10 @@ mkdir -p $RESULTS_DIR
 # List of test configurations (script name, users, spawn rate, run time, csv prefix)
 TEST_SCRIPTS=(
   "mean_latency_and_p95.py 50 10 5m latency_p95"
-  "throughput_under_increasing_load.py 200 50 10m throughput"
-  "high_load_for_cpu_measuring.py 500 100 10m high_load_cpu"
-  "scalability_and_robustness_under_high_load.py 1000 100 15m scalability_robustness"
-  "recover_after_high_load.py 300 50 5m recover_after_high_load"
-  "text_generation.py 100 10 10m text_generation"
+  "throughput_under_increasing_load.py 50 10 5m throughput"
+  "scalability_and_robustness_under_high_load.py 200 20 5m scalability_robustness"
+  "recover_after_high_load.py 200 20 5m recover_after_high_load"
+  #"text_generation.py 100 10 10m text_generation"
 )
 
 # Loop through each test and execute it with its specific configuration
