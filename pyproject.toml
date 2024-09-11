@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "datasets>=2.21.0",
+    "hf-transfer>=0.1.8",
     "locust>=2.31.5",
 ]
 

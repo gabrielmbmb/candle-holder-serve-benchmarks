@@ -33,6 +33,8 @@ for test in "${TEST_SCRIPTS[@]}"; do
 
   # Run locust for the given script
   locust -f "$LOCUST_SCRIPTS_DIR/$script" --headless -u $users -r $spawn_rate --run-time $run_time --csv="$RESULTS_DIR/$csv_prefix" --host http://localhost:8080
+
+  sleep 60
 done
 
 echo "Benchmark tests completed. Results are stored in the '$RESULTS_DIR' directory."
